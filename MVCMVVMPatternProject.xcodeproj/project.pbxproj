@@ -25,6 +25,12 @@
 		6E7719CC2AB0C359004A46F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E7719CB2AB0C359004A46F9 /* SnapKit */; };
 		6E7719D52AB19A7C004A46F9 /* NetflixObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719D42AB19A7C004A46F9 /* NetflixObservable.swift */; };
 		6E7719D72AB19ADF004A46F9 /* NetFlixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719D62AB19ADF004A46F9 /* NetFlixViewModel.swift */; };
+		6E7719DA2AB1E847004A46F9 /* LotteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719D92AB1E847004A46F9 /* LotteryViewModel.swift */; };
+		6E7719DC2AB1E8BE004A46F9 /* LotteryObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719DB2AB1E8BE004A46F9 /* LotteryObservable.swift */; };
+		6E7719DE2AB1EB9B004A46F9 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719DD2AB1EB9B004A46F9 /* Lottery.swift */; };
+		6E7719E02AB1EBC3004A46F9 /* LotteryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719DF2AB1EBC3004A46F9 /* LotteryManager.swift */; };
+		6E7719E32AB1EBDD004A46F9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6E7719E22AB1EBDD004A46F9 /* Alamofire */; };
+		6E7719EE2AB211FA004A46F9 /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7719ED2AB211FA004A46F9 /* LotteryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,11 @@
 		6E7719C82AB0BE7F004A46F9 /* NetFlixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixViewController.swift; sourceTree = "<group>"; };
 		6E7719D42AB19A7C004A46F9 /* NetflixObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixObservable.swift; sourceTree = "<group>"; };
 		6E7719D62AB19ADF004A46F9 /* NetFlixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixViewModel.swift; sourceTree = "<group>"; };
+		6E7719D92AB1E847004A46F9 /* LotteryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewModel.swift; sourceTree = "<group>"; };
+		6E7719DB2AB1E8BE004A46F9 /* LotteryObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryObservable.swift; sourceTree = "<group>"; };
+		6E7719DD2AB1EB9B004A46F9 /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
+		6E7719DF2AB1EBC3004A46F9 /* LotteryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryManager.swift; sourceTree = "<group>"; };
+		6E7719ED2AB211FA004A46F9 /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7719E32AB1EBDD004A46F9 /* Alamofire in Frameworks */,
 				6E7719C62AB0B5D8004A46F9 /* Kingfisher in Frameworks */,
 				6E7719CC2AB0C359004A46F9 /* SnapKit in Frameworks */,
 			);
@@ -80,6 +92,7 @@
 		6E3C06192AB04A4900A30813 /* MVCMVVMPatternProject */ = {
 			isa = PBXGroup;
 			children = (
+				6E7719D82AB1E819004A46F9 /* Lottery */,
 				6E7719C72AB0BCB5004A46F9 /* NetFlix */,
 				6E3C062F2AB04CD700A30813 /* Photo */,
 				6E3C062E2AB04A8500A30813 /* Practice */,
@@ -133,6 +146,18 @@
 			path = NetFlix;
 			sourceTree = "<group>";
 		};
+		6E7719D82AB1E819004A46F9 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				6E7719D92AB1E847004A46F9 /* LotteryViewModel.swift */,
+				6E7719DB2AB1E8BE004A46F9 /* LotteryObservable.swift */,
+				6E7719DF2AB1EBC3004A46F9 /* LotteryManager.swift */,
+				6E7719ED2AB211FA004A46F9 /* LotteryViewController.swift */,
+				6E7719DD2AB1EB9B004A46F9 /* Lottery.swift */,
+			);
+			path = Lottery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +177,7 @@
 			packageProductDependencies = (
 				6E7719C52AB0B5D8004A46F9 /* Kingfisher */,
 				6E7719CB2AB0C359004A46F9 /* SnapKit */,
+				6E7719E22AB1EBDD004A46F9 /* Alamofire */,
 			);
 			productName = MVCMVVMPatternProject;
 			productReference = 6E3C06172AB04A4900A30813 /* MVCMVVMPatternProject.app */;
@@ -184,6 +210,7 @@
 			packageReferences = (
 				6E7719C42AB0B5D8004A46F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				6E7719CA2AB0C359004A46F9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6E7719E12AB1EBDD004A46F9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 6E3C06182AB04A4900A30813 /* Products */;
 			projectDirPath = "";
@@ -214,6 +241,7 @@
 			files = (
 				6E3C063A2AB061CF00A30813 /* Observable.swift in Sources */,
 				6E3C06312AB04CF500A30813 /* Photo.swift in Sources */,
+				6E7719DC2AB1E8BE004A46F9 /* LotteryObservable.swift in Sources */,
 				6E7719C32AB0B36C004A46F9 /* PhotoTableViewCell.swift in Sources */,
 				6E7719D72AB19ADF004A46F9 /* NetFlixViewModel.swift in Sources */,
 				6E3C061F2AB04A4900A30813 /* PhotoViewController.swift in Sources */,
@@ -222,8 +250,12 @@
 				6E7719C12AB09994004A46F9 /* PhotoViewModel.swift in Sources */,
 				6E3C06382AB05E1700A30813 /* SampleViewModel.swift in Sources */,
 				6E3C061B2AB04A4900A30813 /* AppDelegate.swift in Sources */,
+				6E7719DE2AB1EB9B004A46F9 /* Lottery.swift in Sources */,
+				6E7719E02AB1EBC3004A46F9 /* LotteryManager.swift in Sources */,
+				6E7719DA2AB1E847004A46F9 /* LotteryViewModel.swift in Sources */,
 				6E3C06332AB04D1100A30813 /* PhotoManager.swift in Sources */,
 				6E3C061D2AB04A4900A30813 /* SceneDelegate.swift in Sources */,
+				6E7719EE2AB211FA004A46F9 /* LotteryViewController.swift in Sources */,
 				6E7719C92AB0BE7F004A46F9 /* NetFlixViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +500,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		6E7719E12AB1EBDD004A46F9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -480,6 +520,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6E7719CA2AB0C359004A46F9 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		6E7719E22AB1EBDD004A46F9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E7719E12AB1EBDD004A46F9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
