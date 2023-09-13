@@ -15,9 +15,9 @@ class PhotoViewModel {
     func fechPhoto() {
         APIService.shared.searchPhoto(query: "sky") { photo in
             guard let photo = photo else { return }
-            print("=============", photo.results?.count)
+            //print("=============", photo.results?.count)
             self.list.value = photo
-            print(self.list.value )
+        //    print(self.list.value )
         }
     }
     

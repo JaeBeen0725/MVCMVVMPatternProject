@@ -23,7 +23,16 @@ class PhotoViewController: UIViewController {
     
         photoViewModel.fechPhoto()
       
-        photoTableView.reloadData()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "넷플", style: .plain, target: self, action: #selector(netFlixButtonTapped))
+        
+    }
+    
+    @objc func netFlixButtonTapped() {
+        
+        let vc = NetFlixViewController()
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
         
     }
 
